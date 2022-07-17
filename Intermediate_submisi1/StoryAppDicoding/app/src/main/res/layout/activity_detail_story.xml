@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewActivity.DetailStoryActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_detail"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:transitionName="img_trans_detail"
+        tools:src="@tools:sample/avatars"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/img_detail"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_detail"
+        app:layout_constraintTop_toTopOf="@+id/img_detail"
+        android:transitionName="tv_name_detail"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/tv_id_story"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        app:layout_constraintBottom_toBottomOf="@+id/img_detail"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintVertical_bias="1.0"
+        android:transitionName="tv_id_story_detail"
+        tools:text="Id story" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="307dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_story"
+        app:layout_constraintVertical_bias="0.012"
+        android:transitionName="tv_desc_detail"
+        tools:text="Description" />
+
+    <TextView
+        android:id="@+id/tv_created_at"
+        android:layout_width="307dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:transitionName="tv_created_at_detail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_desc"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_story"
+        app:layout_constraintVertical_bias="0.177"
+        tools:text="Create at" />
+</androidx.constraintlayout.widget.ConstraintLayout>

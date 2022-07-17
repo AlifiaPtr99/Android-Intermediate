@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">StoryAppDicoding</string>
+    <string name="login_success">Login success!</string>
+    <string name="login_fail">Login failed!</string>
+    <string name="email_error">Wrong email format</string>
+    <string name="email_fill">Please fill your email</string>
+    <string name="email_double">Email already registered!</string>
+    <string name="password_fill">Please fill your password</string>
+    <string name="name_fill">Please fill your name</string>
+    <string name="password_error">Password must have at least 6 characters</string>
+    <string name="name_error">Name can\'t be empty</string>
+    <string name="fail_take_photo">Fail to take photo</string>
+    <string name="fail_show_camera">Fail to show camera</string>
+    <string name="fail_load_stories">Stories failed to load</string>
+    <string name="success_load_stories">Story success to load!</string>
+    <string name="permission_denied">Permission denied!</string>
+    <string name="upload_success">Upload success!</string>
+    <string name="upload_fail">Upload failed</string>
+    <string name="register_success">Register success silahkan login</string>
+    <string name="register_fail">Register failed!</string>
+    <string name="logout_success">Logout success!</string>
+    <string name="add_story_fail">Upload story failed</string>
+    <string name="failed_take">Failed to take picture</string>
+    <string name="pic">picture</string>
+    <string name="back_cam">isBackCamera</string>
+    <string name="failed_cam">Failed to bring up camera</string>
+</resources>
